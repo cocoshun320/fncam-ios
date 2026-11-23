@@ -1,0 +1,37 @@
+name: FnCamIOS
+options:
+  bundleIdPrefix: com.fnos
+  deploymentTarget:
+    iOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    TARGETED_DEVICE_FAMILY: "1"
+    CODE_SIGNING_ALLOWED: NO
+    CODE_SIGNING_REQUIRED: NO
+    CODE_SIGN_IDENTITY: ""
+    SWIFT_VERSION: "5.0"
+targets:
+  FnCamIOS:
+    type: application
+    platform: iOS
+    sources:
+      - path: .
+        includes:
+          - "*.swift"
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: 影传相机
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSCameraUsageDescription: 用于拍照和录像
+        NSMicrophoneUsageDescription: 用于录像时录音
+        NSPhotoLibraryUsageDescription: 把拍摄的照片和视频保存到相册独立分组，并读取用于上传备份
+        NSPhotoLibraryAddUsageDescription: 把拍摄的照片和视频保存到相册
+        NSLocalNetworkUsageDescription: 通过 FTP 把照片视频备份到你的局域网 NAS
+        UIRequiresFullScreen: true
+        UIApplicationSupportsIndirectInputEvents: true
