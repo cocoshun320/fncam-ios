@@ -33,10 +33,10 @@ targets:
         NSPhotoLibraryUsageDescription: 把拍摄的照片和视频保存到相册独立分组，并读取用于上传备份
         NSPhotoLibraryAddUsageDescription: 把拍摄的照片和视频保存到相册
         NSLocalNetworkUsageDescription: 通过 FTP 把照片视频备份到你的局域网 NAS
-        UIRequiresFullScreen: trueschemes:
+        UIRequiresFullScreen: true
+        UIApplicationSupportsIndirectInputEvents: true
+schemes:
   FnCamIOS:
     build:
       targets:
         FnCamIOS: all
-        UIApplicationSupportsIndirectInputEvents: true
-        
