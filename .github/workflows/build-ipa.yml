@@ -17,7 +17,7 @@ jobs:
         run: |
           xcodebuild \
             -project FnCamIOS.xcodeproj \
-            -target FnCamIOS \
+            -scheme FnCamIOS \
             -configuration Release \
             -sdk iphoneos \
             -derivedDataPath build \
